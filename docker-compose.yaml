@@ -1,0 +1,57 @@
+version: "3.8"
+
+services:
+  fastapi:
+    build:
+      context: ./fastapi_app
+    container_name: api-fastapi
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./mlruns:/app/shared_model   # FastAPI accede al modelo entrenado
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:v2.12.1
+    container_name: mlflow
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlflow:/mlflow                    # Base de datos de MLflow
+      - ./mlruns:/mlflow/artifacts          # Artefactos/modelos entrenados
+    command: >
+      mlflow server
+      --backend-store-uri sqlite:///mlflow/mlflow.db
+      --default-artifact-root /mlflow/artifacts
+      --host 0.0.0.0
+
+  postgres:
+    image: postgres:13
+    container_name: postgres
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  airflow:
+    build:
+      context: ./airflow
+    container_name: airflow
+    command: bash -c "airflow db init && airflow scheduler & airflow webserver"
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
+      AIRFLOW__CORE__FERNET_KEY: Zbsr_kT5eo9rxkKfFxcJ-nlz2JpqD0CJ27wRxpKZiYw=
+      AIRFLOW__WEBSERVER__SECRET_KEY: supersecretkeyexample123
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    volumes:
+      - ./airflow/dags:/opt/airflow/dags     # DAGs
+      - ./mlruns:/mlflow/artifacts
+
+volumes:
+  postgres_data:
