@@ -5,7 +5,7 @@ import numpy as np
 
 # Cargar el modelo previamente entrenado
 #model = joblib.load("model.joblib")
-model = joblib.load("/app/shared_model/model.joblib")
+model = joblib.load("/app/shared_models/model.joblib")
 
 # Inicializar FastAPI
 app = FastAPI()

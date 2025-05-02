@@ -8,7 +8,9 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./mlruns:/app/shared_model   # FastAPI accede al modelo entrenado
+      - ./shared_models:/app/shared_models
+    depends_on:
+      - airflow
 
   mlflow:
     image: ghcr.io/mlflow/mlflow:v2.12.1
@@ -16,8 +18,9 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - ./mlflow:/mlflow                    # Base de datos de MLflow
-      - ./mlruns:/mlflow/artifacts          # Artefactos/modelos entrenados
+      - ./mlflow:/mlflow
+    environment:
+      - MLFLOW_TRACKING_DIR=/mlflow
     command: >
       mlflow server
       --backend-store-uri sqlite:///mlflow/mlflow.db
@@ -38,20 +41,23 @@ services:
     build:
       context: ./airflow
     container_name: airflow
-    command: bash -c "airflow db init && airflow scheduler & airflow webserver"
+    command: bash -c "airflow scheduler & airflow webserver"
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres:5432/airflow
       AIRFLOW__CORE__FERNET_KEY: Zbsr_kT5eo9rxkKfFxcJ-nlz2JpqD0CJ27wRxpKZiYw=
       AIRFLOW__WEBSERVER__SECRET_KEY: supersecretkeyexample123
       AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      # Agregar estas variables de entorno para MLflow
+      MLFLOW_TRACKING_URI: http://mlflow:5000
     ports:
       - "8080:8080"
     depends_on:
       - postgres
+      - mlflow
     volumes:
-      - ./airflow/dags:/opt/airflow/dags     # DAGs
-      - ./mlruns:/mlflow/artifacts
+      - ./airflow/dags:/opt/airflow/dags
+      - ./shared_models:/shared_models
 
 volumes:
   postgres_data:

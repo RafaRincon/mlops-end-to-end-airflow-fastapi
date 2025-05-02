@@ -1,32 +1,54 @@
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
-import mlflow
-import mlflow.sklearn
 from sklearn.datasets import load_iris
-from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 import joblib
+import mlflow
+import io
+import tempfile
 import os
 
-def train_and_log_model():
-    iris = load_iris()
-    X_train, X_test, y_train, y_test = train_test_split(iris.data, iris.target, test_size=0.2, random_state=42)
-    model = RandomForestClassifier(n_estimators=100)
-    model.fit(X_train, y_train)
-    acc = model.score(X_test, y_test)
-
-    # MLflow tracking
+def train_and_log_model(**kwargs):
+    # Configurar MLflow para usar la API HTTP
     mlflow.set_tracking_uri("http://mlflow:5000")
-    mlflow.set_experiment("iris-random-forest")
-
-    with mlflow.start_run():
-        mlflow.log_param("n_estimators", 100)
-        mlflow.log_metric("accuracy", acc)
-        mlflow.sklearn.log_model(model, "modelo")
-
-    # Guardar para FastAPI
-    joblib.dump(model, "/mlflow/artifacts/model.joblib")
+    
+    # Cargar datos y entrenar modelo
+    iris = load_iris()
+    X, y = iris.data, iris.target
+    model = RandomForestClassifier(n_estimators=100, random_state=42)
+    model.fit(X, y)
+    
+    # Guardar en la carpeta compartida para FastAPI
+    joblib.dump(model, "/shared_models/model.joblib")
+    print(f"Modelo guardado en: /shared_models/model.joblib")
+    
+    # Crear un experimento si no existe
+    experiment_name = "iris_classification"
+    try:
+        experiment = mlflow.get_experiment_by_name(experiment_name)
+        if experiment is None:
+            experiment_id = mlflow.create_experiment(experiment_name)
+        else:
+            experiment_id = experiment.experiment_id
+    except Exception as e:
+        print(f"Error al crear experimento: {e}")
+        # Si falla, usar el experimento por defecto
+        experiment_id = "0"
+    
+    # Registrar en MLflow solo parámetros y métricas
+    with mlflow.start_run(experiment_id=experiment_id) as run:
+        # Registrar parámetros
+        mlflow.log_params(model.get_params())
+        
+        # Registrar métricas
+        accuracy = model.score(X, y)
+        mlflow.log_metric("accuracy", accuracy)
+        print(f"Precisión del modelo: {accuracy:.4f}")
+        
+        # No intentar guardar artefactos, solo registrar las métricas y parámetros
+        print(f"🏃 Modelo registrado en MLflow (solo métricas y parámetros)")
+        print(f"🔗 Ver run: http://mlflow:5000/#/experiments/{experiment_id}/runs/{run.info.run_id}")
 
 # Definir DAG
 with DAG(
