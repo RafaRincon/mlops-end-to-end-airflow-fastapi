@@ -39,7 +39,7 @@ def train_and_log_model(**kwargs):
         print(f"Precisión del modelo: {accuracy:.4f}")
         
         print(f"🏃 Modelo registrado en MLflow (solo métricas y parámetros)")
-        print(f"🔗 Ver run: http://mlflow:5000/#/experiments/{experiment_id}/runs/{run.info.run_id}")
+        print(f"🔗 Ver run: http://localhost:5000/#/experiments/{experiment_id}/runs/{run.info.run_id}")
 
 with DAG(
     dag_id="entrenamiento_modelo_iris",

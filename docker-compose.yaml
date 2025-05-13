@@ -27,6 +27,16 @@ services:
       --default-artifact-root /mlflow/artifacts
       --host 0.0.0.0
 
+  prometheus:
+    image: prom/prometheus
+    container_name: prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+    depends_on:
+      - fastapi
+
   postgres:
     image: postgres:13
     container_name: postgres
@@ -48,7 +58,6 @@ services:
       AIRFLOW__CORE__FERNET_KEY: Zbsr_kT5eo9rxkKfFxcJ-nlz2JpqD0CJ27wRxpKZiYw=
       AIRFLOW__WEBSERVER__SECRET_KEY: supersecretkeyexample123
       AIRFLOW__CORE__LOAD_EXAMPLES: "False"
-      # Agregar estas variables de entorno para MLflow
       MLFLOW_TRACKING_URI: http://mlflow:5000
     ports:
       - "8080:8080"
