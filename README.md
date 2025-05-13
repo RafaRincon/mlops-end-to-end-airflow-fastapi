@@ -125,7 +125,7 @@ Monitored metrics include:
 
 ## 📌 Author
 
-Rafa Rincón · [LinkedIn](https://linkedin.com) · [GitHub](https://github.com)
+Rafael Rincón · [LinkedIn](https://linkedin.com) · [GitHub](https://github.com)
 
 ---
 
