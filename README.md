@@ -1,4 +1,3 @@
-```markdown
 # 🧠 MLOps End-to-End Project with Airflow, FastAPI, MLflow & Prometheus
 
 This project implements a complete MLOps workflow running locally with Docker Compose. It includes:
@@ -135,5 +134,3 @@ Rafa Rincón · [LinkedIn](https://linkedin.com) · [GitHub](https://github.com)
 * ✅ Add Grafana dashboards for advanced visualization
 * ✅ Enable MLflow Model Registry
 * ✅ Implement input data validation in the Airflow training pipeline
-
-```
