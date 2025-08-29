@@ -1,67 +1,110 @@
-# 🧠 MLOps End-to-End Project with Airflow, FastAPI, MLflow & Prometheus
+# 🧠 End-to-End MLOps (Airflow + FastAPI + MLflow + Prometheus)
 
-This project implements a complete MLOps workflow running locally with Docker Compose. It includes:
-
-- **Model training and orchestration using Apache Airflow**
-- **Model serving with FastAPI**
-- **Experiment tracking with MLflow**
-- **API monitoring with Prometheus**
-
----
-
-## 🚀 Technology Stack
-
-| Component     | Purpose                                      |
-|---------------|----------------------------------------------|
-| **FastAPI**   | Serves predictions from a trained ML model   |
-| **Airflow**   | Schedules and orchestrates ML tasks          |
-| **MLflow**    | Logs model parameters, metrics, and runs     |
-| **Prometheus**| Monitors API performance and availability    |
-| **Docker**    | Containerizes and orchestrates services      |
-| **Scikit-learn** | Trains a classification model (Iris)     |
+This repository delivers a local MLOps workflow using Docker Compose. It covers:
+- **Training & model selection** (scikit-learn) with **MLflow** tracking/registry
+- **Serving** with **FastAPI** loading models from MLflow (via alias)
+- **Prediction simulation** with an **Airflow** DAG (10 predictions every 5 minutes)
+- **Monitoring** via **Prometheus** (requests, latency, errors, status codes)
 
 ---
 
-## 📁 Project Structure
+## 🧩 Components
+
+| Component      | Purpose                                                   |
+|----------------|-----------------------------------------------------------|
+| **MLflow**     | Experiment tracking, artifacts, and Model Registry        |
+| **FastAPI**    | Online inference; loads latest **Production** alias       |
+| **Airflow**    | Orchestrates the prediction simulator DAG                 |
+| **Prometheus** | Metrics for the API: requests, latency, errors, statuses  |
+| **Docker**     | Local orchestration for all services                      |
+
+---
+
+## 📁 Project Structure (key paths)
 
 ```
-
-MLAirflow/
+.
 ├── airflow/
 │   └── dags/
+│       └── simulate\_inference\_dag.py   # sends 10 predictions every 5 minutes
+├── data/
+│   └── Synthetic\_Customers\_Data.csv    # training data
 ├── fastapi\_app/
-│   ├── app.py
+│   ├── app.py                          # FastAPI app (loads MLflow model)
 │   └── requirements.txt
-├── mlflow/                 # MLflow backend store
-├── shared\_models/          # Trained model (model.joblib)
+├── inference\_store/                    # CSVs from the simulator
+├── mlflow/                             # MLflow backend store
 ├── prometheus/
 │   └── prometheus.yml
+├── src/
+│   └── training/
+│       └── train\_best\_model.py         # trains, logs, registers best model
 ├── docker-compose.yml
 └── README.md
-
 ````
 
 ---
 
-## ⚙️ Getting Started
+## ⚙️ Prerequisites
 
-### 1. Clone the repository
+- Docker & Docker Compose
 
+---
+
+## 🚀 Workflow
+
+### 1. Build all images
 ```bash
-git clone https://github.com/RafaRincon/MLAirflow.git
-cd MLAirflow
+docker-compose build
 ````
 
-### 2. Initialize the Airflow database (one time only)
+### 2. Start only MLflow
 
 ```bash
-docker-compose run airflow airflow db init
+docker-compose up -d mlflow
 ```
 
-### 3. Create an Airflow admin user
+### 3. Train and (optionally) register the best model
+
+Run after MLflow is reachable at `http://localhost:5000`:
 
 ```bash
-docker-compose run airflow airflow users create \
+python ./src/training/train_best_model.py \
+  --data ./data/Synthetic_Customers_Data.csv \
+  --experiment customer_models \
+  --register customers_models \
+  --test_size 0.2 \
+  --cv_folds 2 \
+  --alias Production
+```
+
+This:
+
+* Trains multiple candidate models with CV.
+* Logs metrics and artifacts to **MLflow**.
+* Registers the best model in the Model Registry as `customers_models`.
+* Updates alias **Production** so FastAPI can serve it.
+
+> 🔎 If you omit `--register`, the model will not be registered, only logged.
+
+### 4. Start FastAPI (now a model exists to load)
+
+```bash
+docker-compose up -d fastapi
+```
+
+FastAPI loads the MLflow alias (`models:/customers_models@Production`) automatically.
+
+### 5. Initialize Airflow
+
+```bash
+docker-compose run --rm airflow airflow db init
+```
+
+Create the Airflow admin user:
+
+```bash
+docker-compose run --rm airflow airflow users create \
   --username admin \
   --firstname User \
   --lastname Name \
@@ -70,66 +113,62 @@ docker-compose run airflow airflow users create \
   --password admin
 ```
 
-### 4. Start all services
+### 6. Start remaining services (Airflow, Prometheus)
 
 ```bash
-docker-compose up --build
+docker-compose up -d
 ```
 
----
+### 7. Enable the simulation DAG
 
-## 🌐 Access Services
-
-| Service    | URL                                            |
-| ---------- | ---------------------------------------------- |
-| FastAPI    | [http://localhost:8000](http://localhost:8000) |
-| Airflow UI | [http://localhost:8080](http://localhost:8080) |
-| MLflow UI  | [http://localhost:5000](http://localhost:5000) |
-| Prometheus | [http://localhost:9090](http://localhost:9090) |
+In Airflow UI (`http://localhost:8080`), turn on `simulate_inference_to_mlflow`.
 
 ---
 
-## 🤖 Available Workflows
+## 📡 Endpoints
 
-### `entrenamiento_modelo_iris`
-
-* Trains a `RandomForestClassifier` on the Iris dataset
-* Saves the trained model to `shared_models/model.joblib`
-* Logs parameters and metrics to MLflow
-
-### `predict_api_every_5_minutes`
-
-* Runs every 5 minutes
-* Generates random inputs and sends them to the FastAPI `/predict` endpoint
-* Logs predictions and latency in MLflow
+* FastAPI → [http://localhost:8000](http://localhost:8000)
+* Airflow UI → [http://localhost:8080](http://localhost:8080)
+* MLflow UI → [http://localhost:5000](http://localhost:5000)
+* Prometheus → [http://localhost:9090](http://localhost:9090)
 
 ---
 
-## 📈 API Monitoring with Prometheus
+## 📈 Prometheus Metrics
 
-FastAPI exposes Prometheus-compatible metrics on port `8001` using the `prometheus_client` library.
+FastAPI exposes metrics at port `8001`. Key metrics:
 
-Monitored metrics include:
-
-* `api_requests_total`: number of `/predict` calls
-* `api_request_duration_seconds`: response time histogram
-
----
-
-## 🔐 Notes
-
-* Run `docker-compose build fastapi` after editing `app.py`
-* Ensure at least one request has been made to `/predict` to see Prometheus metrics
+* **`api_requests_total`** → total calls to `/predict`
+* **`api_request_duration_seconds`** → histogram of request latencies
+* **`api_errors_total`** → total unhandled errors
+* **`api_status_total{path,method,status}`** → per-endpoint status codes
 
 ---
 
-## 📌 Author
+## 🧭 Typical Flow
 
-Rafael Rincón · [LinkedIn](https://www.linkedin.com/in/rafael-rinc%C3%B3n-ram%C3%ADrez-a8b052122/) · [GitHub](https://github.com/RafaRincon)
+1. `docker-compose build`
+2. `docker-compose up -d mlflow`
+3. Run `train_best_model.py` to train/register the best model
+4. `docker-compose up -d fastapi`
+5. Init Airflow DB + admin user
+6. `docker-compose up -d` for Airflow + Prometheus
+7. Enable the simulator DAG in Airflow
+8. Watch predictions flow into MLflow, CSVs in `inference_store`, and metrics in Prometheus
+
 ---
 
-## 🏁 Next Steps
+## 🔮 Future Improvements
 
-* ✅ Add Grafana dashboards for advanced visualization
-* ✅ Enable MLflow Model Registry
-* ✅ Implement input data validation in the Airflow training pipeline
+* Ground-truth monitor DAG (watch `data/truth_labels`)
+* Auto retrain trigger when performance drops
+* Unit tests for API/model predictions
+* Alerting on error/latency thresholds
+* Modular training pipeline (data prep → train → eval → register)
+* Grafana dashboards
+
+---
+
+## 👤 Author
+
+Rafael Rincón · [LinkedIn](https://www.linkedin.com/in/rafarinra/) · [GitHub](https://github.com/RafaRincon)

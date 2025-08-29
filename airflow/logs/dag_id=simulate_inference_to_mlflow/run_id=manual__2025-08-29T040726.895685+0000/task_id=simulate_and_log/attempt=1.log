@@ -1,0 +1,29 @@
+[2025-08-29T04:07:37.331+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: simulate_inference_to_mlflow.simulate_and_log manual__2025-08-29T04:07:26.895685+00:00 [queued]>
+[2025-08-29T04:07:37.347+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: simulate_inference_to_mlflow.simulate_and_log manual__2025-08-29T04:07:26.895685+00:00 [queued]>
+[2025-08-29T04:07:37.348+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2025-08-29T04:07:37.370+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): simulate_and_log> on 2025-08-29 04:07:26.895685+00:00
+[2025-08-29T04:07:37.379+0000] {standard_task_runner.py:60} INFO - Started process 279 to run task
+[2025-08-29T04:07:37.383+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'simulate_inference_to_mlflow', 'simulate_and_log', 'manual__2025-08-29T04:07:26.895685+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/simulate_inference_dags.py', '--cfg-path', '/tmp/tmpz00yq_7c']
+[2025-08-29T04:07:37.386+0000] {standard_task_runner.py:88} INFO - Job 3: Subtask simulate_and_log
+[2025-08-29T04:07:37.450+0000] {task_command.py:423} INFO - Running <TaskInstance: simulate_inference_to_mlflow.simulate_and_log manual__2025-08-29T04:07:26.895685+00:00 [running]> on host 6d062f959f65
+[2025-08-29T04:07:37.554+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='mlops' AIRFLOW_CTX_DAG_ID='simulate_inference_to_mlflow' AIRFLOW_CTX_TASK_ID='simulate_and_log' AIRFLOW_CTX_EXECUTION_DATE='2025-08-29T04:07:26.895685+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-08-29T04:07:26.895685+00:00'
+[2025-08-29T04:07:40.371+0000] {logging_mixin.py:188} WARNING - 2025/08/29 04:07:40 WARNING mlflow.utils.git_utils: Failed to import Git (the Git executable is probably not on your PATH), so Git SHA is not available. Error: Failed to initialize: Bad git executable.
+The git executable must be specified in one of the following ways:
+    - be included in your $PATH
+    - be set via $GIT_PYTHON_GIT_EXECUTABLE
+    - explicitly set via git.refresh(<full-path-to-git-executable>)
+
+All git commands will error until this is rectified.
+
+This initial message can be silenced or aggravated in the future by setting the
+$GIT_PYTHON_REFRESH environment variable. Use one of the following values:
+    - quiet|q|silence|s|silent|none|n|0: for no message or exception
+    - warn|w|warning|log|l|1: for a warning message (logging level CRITICAL, displayed by default)
+    - error|e|exception|raise|r|2: for a raised exception
+
+Example:
+    export GIT_PYTHON_REFRESH=quiet
+[2025-08-29T04:07:41.459+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-08-29T04:07:41.476+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=simulate_inference_to_mlflow, task_id=simulate_and_log, execution_date=20250829T040726, start_date=20250829T040737, end_date=20250829T040741
+[2025-08-29T04:07:41.542+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-08-29T04:07:41.564+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
