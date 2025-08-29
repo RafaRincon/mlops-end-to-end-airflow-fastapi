@@ -1,7 +1,8 @@
+.venv/
+**/airflow/dags/__pycache__/
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-mlruns/
-mlflow/mlflow.db
-**/mlflow.db
+mlflow/*
+**/mlflow/*
