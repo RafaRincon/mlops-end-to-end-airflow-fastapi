@@ -5,8 +5,4 @@ __pycache__/
 *.pyo
 *.pyd
 **/mlflow/mlflow.db
-<<<<<<< HEAD
 **/mlflow/artifacts/*
-=======
-**/mlflow/artifacts/*
->>>>>>> 09d71fa4c002ca366882e55c434d798469d0f54b
