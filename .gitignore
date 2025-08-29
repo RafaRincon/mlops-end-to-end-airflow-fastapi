@@ -4,5 +4,5 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyd
-**/mlflow/mlflow.db
-**/mlflow/artifacts/*
+/mlflow/mlflow.db
+/mlflow/artifacts/*
