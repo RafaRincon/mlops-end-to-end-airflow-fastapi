@@ -600,3 +600,24 @@
 [2025-08-29T03:16:25.093+0000] {logging_mixin.py:188} INFO - [2025-08-29T03:16:25.092+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-08-29T03:16:25.115+0000] {logging_mixin.py:188} INFO - [2025-08-29T03:16:25.115+0000] {dag.py:3823} INFO - Setting next_dagrun for predict_api_every_5_minutes to 2025-08-29 03:10:00+00:00, run_after=2025-08-29 03:15:00+00:00
 [2025-08-29T03:16:25.141+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/predict_via_api_dag.py took 1.091 seconds
+[2025-08-29T03:16:56.033+0000] {processor.py:161} INFO - Started process (PID=2298) to work on /opt/airflow/dags/predict_via_api_dag.py
+[2025-08-29T03:16:56.035+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/predict_via_api_dag.py for tasks to queue
+[2025-08-29T03:16:56.036+0000] {logging_mixin.py:188} INFO - [2025-08-29T03:16:56.036+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/predict_via_api_dag.py
+[2025-08-29T03:16:57.191+0000] {processor.py:840} INFO - DAG(s) 'predict_api_every_5_minutes' retrieved from /opt/airflow/dags/predict_via_api_dag.py
+[2025-08-29T03:16:57.219+0000] {logging_mixin.py:188} INFO - [2025-08-29T03:16:57.218+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-08-29T03:16:57.244+0000] {logging_mixin.py:188} INFO - [2025-08-29T03:16:57.243+0000] {dag.py:3823} INFO - Setting next_dagrun for predict_api_every_5_minutes to 2025-08-29 03:10:00+00:00, run_after=2025-08-29 03:15:00+00:00
+[2025-08-29T03:16:57.274+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/predict_via_api_dag.py took 1.245 seconds
+[2025-08-29T03:17:28.251+0000] {processor.py:161} INFO - Started process (PID=2337) to work on /opt/airflow/dags/predict_via_api_dag.py
+[2025-08-29T03:17:28.252+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/predict_via_api_dag.py for tasks to queue
+[2025-08-29T03:17:28.253+0000] {logging_mixin.py:188} INFO - [2025-08-29T03:17:28.253+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/predict_via_api_dag.py
+[2025-08-29T03:17:29.167+0000] {processor.py:840} INFO - DAG(s) 'predict_api_every_5_minutes' retrieved from /opt/airflow/dags/predict_via_api_dag.py
+[2025-08-29T03:17:29.194+0000] {logging_mixin.py:188} INFO - [2025-08-29T03:17:29.193+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-08-29T03:17:29.218+0000] {logging_mixin.py:188} INFO - [2025-08-29T03:17:29.217+0000] {dag.py:3823} INFO - Setting next_dagrun for predict_api_every_5_minutes to 2025-08-29 03:10:00+00:00, run_after=2025-08-29 03:15:00+00:00
+[2025-08-29T03:17:29.245+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/predict_via_api_dag.py took 0.997 seconds
+[2025-08-29T03:17:59.734+0000] {processor.py:161} INFO - Started process (PID=2376) to work on /opt/airflow/dags/predict_via_api_dag.py
+[2025-08-29T03:17:59.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/predict_via_api_dag.py for tasks to queue
+[2025-08-29T03:17:59.737+0000] {logging_mixin.py:188} INFO - [2025-08-29T03:17:59.737+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/predict_via_api_dag.py
+[2025-08-29T03:18:00.743+0000] {processor.py:840} INFO - DAG(s) 'predict_api_every_5_minutes' retrieved from /opt/airflow/dags/predict_via_api_dag.py
+[2025-08-29T03:18:00.772+0000] {logging_mixin.py:188} INFO - [2025-08-29T03:18:00.771+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-08-29T03:18:00.796+0000] {logging_mixin.py:188} INFO - [2025-08-29T03:18:00.795+0000] {dag.py:3823} INFO - Setting next_dagrun for predict_api_every_5_minutes to 2025-08-29 03:10:00+00:00, run_after=2025-08-29 03:15:00+00:00
+[2025-08-29T03:18:00.822+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/predict_via_api_dag.py took 1.092 seconds
