@@ -1,0 +1,11 @@
+prediction_id,ts_utc,exec_ts,status_code,latency_ms,prediction,error,model_version_loaded,model_uri_api,age,monthly_income,debt_to_income_ratio,transactions_per_month,complaints_last_6m
+6124788d-364f-4940-b074-56418e378d0a,2025-08-29T03:05:02.112187+00:00,2025-08-29 03:00:00,200,7.99,good,,unknown,models:/customers_models@Production,22,19636,0.217,41,0
+7b0f9dd9-8088-46ee-94f0-15437e4466a0,2025-08-29T03:05:02.371608+00:00,2025-08-29 03:00:00,200,8.88,good,,unknown,models:/customers_models@Production,62,14939,0.405,24,0
+8188571e-83f2-404d-b14e-d047f83e781f,2025-08-29T03:05:02.630787+00:00,2025-08-29 03:00:00,200,8.7,good,,unknown,models:/customers_models@Production,67,12113,0.208,71,4
+a1546f9d-e2f2-48bc-a02c-36ce91a14569,2025-08-29T03:05:02.889592+00:00,2025-08-29 03:00:00,200,8.26,good,,unknown,models:/customers_models@Production,80,12258,0.5,88,3
+8665110a-80bf-4a72-a7a6-2459292c6af5,2025-08-29T03:05:03.148324+00:00,2025-08-29 03:00:00,200,8.24,regular,,unknown,models:/customers_models@Production,51,5617,0.661,21,1
+f8a5e050-490e-4865-9c3e-7c8579ab96c5,2025-08-29T03:05:03.407446+00:00,2025-08-29 03:00:00,200,8.64,good,,unknown,models:/customers_models@Production,72,14234,0.351,96,7
+1297e662-6914-4b74-a318-c9960739ebed,2025-08-29T03:05:03.673939+00:00,2025-08-29 03:00:00,200,15.97,good,,unknown,models:/customers_models@Production,26,24006,0.823,10,5
+e3ab3c7a-04cf-49de-b689-57c022701608,2025-08-29T03:05:03.932953+00:00,2025-08-29 03:00:00,200,8.54,regular,,unknown,models:/customers_models@Production,31,5425,0.236,43,8
+10e6c1ed-f2e8-40a8-a6f2-e7f6db5dfa42,2025-08-29T03:05:04.191769+00:00,2025-08-29 03:00:00,200,8.34,good,,unknown,models:/customers_models@Production,73,13347,0.892,96,5
+4f2dc29b-9c33-4fa3-b9c4-e775a84411ab,2025-08-29T03:05:04.452687+00:00,2025-08-29 03:00:00,200,10.71,good,,unknown,models:/customers_models@Production,56,14132,0.872,54,1

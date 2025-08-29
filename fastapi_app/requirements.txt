@@ -1,6 +1,8 @@
-fastapi
-uvicorn
-scikit-learn
-joblib
-dill
-prometheus_client
+fastapi==0.116.1
+uvicorn==0.35.0
+#scikit-learn
+#joblib
+dill==0.4.0
+prometheus_client==0.22.1
+mlflow==2.12.1
+setuptools==80.9.0

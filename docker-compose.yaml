@@ -19,12 +19,13 @@ services:
       - "5000:5000"
     volumes:
       - ./mlflow:/mlflow
-    environment:
-      - MLFLOW_TRACKING_DIR=/mlflow
+#    environment:
+#      - MLFLOW_TRACKING_DIR=/mlflow
     command: >
       mlflow server
       --backend-store-uri sqlite:///mlflow/mlflow.db
-      --default-artifact-root /mlflow/artifacts
+      --artifacts-destination file:///mlflow/artifacts
+      --serve-artifacts
       --host 0.0.0.0
 
   prometheus:
@@ -58,7 +59,10 @@ services:
       AIRFLOW__CORE__FERNET_KEY: Zbsr_kT5eo9rxkKfFxcJ-nlz2JpqD0CJ27wRxpKZiYw=
       AIRFLOW__WEBSERVER__SECRET_KEY: supersecretkeyexample123
       AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      PREDICT_API_URL: http://fastapi:8000
       MLFLOW_TRACKING_URI: http://mlflow:5000
+      INFERENCE_EXPERIMENT: inference_logs
+      INFERENCE_STORE_DIR: /opt/airflow/inference_store
     ports:
       - "8080:8080"
     depends_on:
@@ -66,7 +70,13 @@ services:
       - mlflow
     volumes:
       - ./airflow/dags:/opt/airflow/dags
-      - ./shared_models:/shared_models
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
+      - ./inference_store:/opt/airflow/inference_store
 
 volumes:
   postgres_data:
+  airflow_dags:
+  airflow_logs:
+  airflow_plugins:
+  inference_store: 

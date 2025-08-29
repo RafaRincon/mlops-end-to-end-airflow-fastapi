@@ -1,0 +1,916 @@
+[2025-08-29T02:29:33.798+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-08-29T02:29:33.800+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-08-29T02:29:33.803+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-08-29T02:29:33.805+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-08-29T02:29:33.888+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-08-29T02:29:34.521+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/ml_training_dag.py            169  0.30s             0           0
+/opt/airflow/dags/predict_via_api_dag.py                               0           0
+/opt/airflow/dags/simulate_inference_dags.py    166  0.36s             0           0
+================================================================================
+[2025-08-29T02:30:05.145+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  5.54s           2025-08-29T02:29:39
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.38s           2025-08-29T02:29:41
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  5.73s           2025-08-29T02:29:39
+================================================================================
+[2025-08-29T02:30:36.110+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  4.64s           2025-08-29T02:30:14
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  2.27s           2025-08-29T02:30:15
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  3.46s           2025-08-29T02:30:13
+================================================================================
+[2025-08-29T02:31:06.733+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  4.34s           2025-08-29T02:30:49
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  3.07s           2025-08-29T02:30:49
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  2.33s           2025-08-29T02:30:46
+================================================================================
+[2025-08-29T02:31:37.041+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.00s           2025-08-29T02:31:21
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.33s           2025-08-29T02:31:21
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.32s           2025-08-29T02:31:18
+================================================================================
+[2025-08-29T02:32:07.144+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.76s           2025-08-29T02:31:54
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.16s           2025-08-29T02:31:52
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.28s           2025-08-29T02:31:49
+================================================================================
+[2025-08-29T02:32:37.289+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.83s           2025-08-29T02:32:26
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.15s           2025-08-29T02:32:24
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.47s           2025-08-29T02:32:21
+================================================================================
+[2025-08-29T02:33:07.394+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.58s           2025-08-29T02:32:58
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.09s           2025-08-29T02:32:55
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.23s           2025-08-29T02:32:52
+================================================================================
+[2025-08-29T02:33:37.831+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.67s           2025-08-29T02:33:30
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  0.99s           2025-08-29T02:33:27
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.07s           2025-08-29T02:33:24
+================================================================================
+[2025-08-29T02:34:08.541+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.76s           2025-08-29T02:34:02
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.37s           2025-08-29T02:33:58
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.43s           2025-08-29T02:33:55
+================================================================================
+[2025-08-29T02:34:34.001+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-08-29T02:34:34.077+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-08-29T02:34:39.142+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.10s           2025-08-29T02:34:35
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.23s           2025-08-29T02:34:30
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.20s           2025-08-29T02:34:27
+================================================================================
+[2025-08-29T02:35:09.285+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.79s           2025-08-29T02:35:07
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.34s           2025-08-29T02:35:01
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.48s           2025-08-29T02:34:59
+================================================================================
+[2025-08-29T02:35:39.305+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py            690  2.01s             1           0  1.79s           2025-08-29T02:35:07
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.19s           2025-08-29T02:35:33
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.10s           2025-08-29T02:35:31
+================================================================================
+[2025-08-29T02:36:09.924+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py            740  0.00s             1           0  2.30s           2025-08-29T02:35:39
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.43s           2025-08-29T02:36:04
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.29s           2025-08-29T02:36:02
+================================================================================
+[2025-08-29T02:36:40.151+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.78s           2025-08-29T02:36:11
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.25s           2025-08-29T02:36:36
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.14s           2025-08-29T02:36:34
+================================================================================
+[2025-08-29T02:37:10.381+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.87s           2025-08-29T02:36:44
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.10s           2025-08-29T02:37:08
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.08s           2025-08-29T02:37:05
+================================================================================
+[2025-08-29T02:37:40.830+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.68s           2025-08-29T02:37:16
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.15s           2025-08-29T02:37:39
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.11s           2025-08-29T02:37:36
+================================================================================
+[2025-08-29T02:38:11.182+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.82s           2025-08-29T02:37:48
+/opt/airflow/dags/predict_via_api_dag.py        894  1.01s             1           0  1.15s           2025-08-29T02:37:39
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.19s           2025-08-29T02:38:08
+================================================================================
+[2025-08-29T02:38:41.307+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.79s           2025-08-29T02:38:21
+/opt/airflow/dags/predict_via_api_dag.py        944  0.00s             1           0  1.09s           2025-08-29T02:38:11
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.11s           2025-08-29T02:38:39
+================================================================================
+[2025-08-29T02:39:11.456+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.74s           2025-08-29T02:38:53
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.20s           2025-08-29T02:38:42
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.24s           2025-08-29T02:39:10
+================================================================================
+[2025-08-29T02:39:34.195+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-08-29T02:39:34.289+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-08-29T02:39:41.916+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.87s           2025-08-29T02:39:25
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.17s           2025-08-29T02:39:13
+/opt/airflow/dags/simulate_inference_dags.py   1020  1.01s             1           0  1.24s           2025-08-29T02:39:10
+================================================================================
+[2025-08-29T02:40:12.297+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  3.12s           2025-08-29T02:39:59
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.17s           2025-08-29T02:39:45
+/opt/airflow/dags/simulate_inference_dags.py   1059  0.01s             1           0  1.24s           2025-08-29T02:39:42
+================================================================================
+[2025-08-29T02:40:42.700+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.84s           2025-08-29T02:40:31
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.37s           2025-08-29T02:40:16
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.16s           2025-08-29T02:40:13
+================================================================================
+[2025-08-29T02:41:13.138+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.04s           2025-08-29T02:41:04
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.56s           2025-08-29T02:40:48
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.33s           2025-08-29T02:40:45
+================================================================================
+[2025-08-29T02:41:43.758+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.56s           2025-08-29T02:41:35
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.30s           2025-08-29T02:41:20
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.34s           2025-08-29T02:41:16
+================================================================================
+[2025-08-29T02:42:14.111+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.02s           2025-08-29T02:42:08
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.13s           2025-08-29T02:41:51
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.04s           2025-08-29T02:41:47
+================================================================================
+[2025-08-29T02:42:44.353+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.52s           2025-08-29T02:42:41
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.44s           2025-08-29T02:42:23
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.25s           2025-08-29T02:42:19
+================================================================================
+[2025-08-29T02:43:14.498+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.81s           2025-08-29T02:43:13
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.24s           2025-08-29T02:42:55
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.24s           2025-08-29T02:42:51
+================================================================================
+[2025-08-29T02:43:44.873+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py           1331  1.56s             1           0  1.81s           2025-08-29T02:43:13
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.51s           2025-08-29T02:43:27
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.24s           2025-08-29T02:43:22
+================================================================================
+[2025-08-29T02:44:14.931+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.36s           2025-08-29T02:43:45
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.59s           2025-08-29T02:43:58
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.68s           2025-08-29T02:43:58
+================================================================================
+[2025-08-29T02:44:34.344+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-08-29T02:44:34.421+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-08-29T02:44:45.559+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.20s           2025-08-29T02:44:17
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.43s           2025-08-29T02:44:30
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.48s           2025-08-29T02:44:30
+================================================================================
+[2025-08-29T02:45:16.043+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.86s           2025-08-29T02:44:50
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.30s           2025-08-29T02:45:01
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.35s           2025-08-29T02:45:01
+================================================================================
+[2025-08-29T02:45:46.438+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.83s           2025-08-29T02:45:22
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.28s           2025-08-29T02:45:33
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.26s           2025-08-29T02:45:33
+================================================================================
+[2025-08-29T02:46:16.629+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.82s           2025-08-29T02:45:55
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.31s           2025-08-29T02:46:04
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.67s           2025-08-29T02:46:14
+================================================================================
+[2025-08-29T02:46:47.149+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.97s           2025-08-29T02:46:27
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.62s           2025-08-29T02:46:37
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.23s           2025-08-29T02:46:46
+================================================================================
+[2025-08-29T02:49:30.692+0000] {manager.py:469} INFO - Processing files using up to 2 processes at a time 
+[2025-08-29T02:49:30.695+0000] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-08-29T02:49:30.698+0000] {manager.py:471} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2025-08-29T02:49:30.700+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-08-29T02:49:30.771+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-08-29T02:49:30.930+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/ml_training_dag.py            169  0.06s             0           0
+/opt/airflow/dags/predict_via_api_dag.py                               0           0
+/opt/airflow/dags/simulate_inference_dags.py    166  0.08s             0           0
+================================================================================
+[2025-08-29T02:50:01.812+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.52s           2025-08-29T02:49:33
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.18s           2025-08-29T02:49:34
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  2.69s           2025-08-29T02:49:33
+================================================================================
+[2025-08-29T02:50:32.018+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  3.37s           2025-08-29T02:50:07
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.62s           2025-08-29T02:50:07
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  2.28s           2025-08-29T02:50:06
+================================================================================
+[2025-08-29T02:51:02.435+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.02s           2025-08-29T02:50:39
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.39s           2025-08-29T02:50:39
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.20s           2025-08-29T02:50:37
+================================================================================
+[2025-08-29T02:51:32.942+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.82s           2025-08-29T02:51:11
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.21s           2025-08-29T02:51:11
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.17s           2025-08-29T02:51:09
+================================================================================
+[2025-08-29T02:52:02.949+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.41s           2025-08-29T02:51:44
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.49s           2025-08-29T02:51:42
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.31s           2025-08-29T02:51:40
+================================================================================
+[2025-08-29T02:52:33.317+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  3.49s           2025-08-29T02:52:18
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  2.32s           2025-08-29T02:52:16
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  3.18s           2025-08-29T02:52:14
+================================================================================
+[2025-08-29T02:53:03.492+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.77s           2025-08-29T02:52:51
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.35s           2025-08-29T02:52:47
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.15s           2025-08-29T02:52:46
+================================================================================
+[2025-08-29T02:53:33.741+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.67s           2025-08-29T02:53:23
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.12s           2025-08-29T02:53:19
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.23s           2025-08-29T02:53:17
+================================================================================
+[2025-08-29T02:54:03.925+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.60s           2025-08-29T02:53:55
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.08s           2025-08-29T02:53:50
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.30s           2025-08-29T02:53:49
+================================================================================
+[2025-08-29T02:54:30.727+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-08-29T02:54:30.788+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-08-29T02:54:34.645+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.92s           2025-08-29T02:54:28
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.12s           2025-08-29T02:54:21
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.07s           2025-08-29T02:54:20
+================================================================================
+[2025-08-29T02:55:05.068+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.68s           2025-08-29T02:55:00
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.16s           2025-08-29T02:54:52
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.19s           2025-08-29T02:54:51
+================================================================================
+[2025-08-29T02:55:35.438+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.62s           2025-08-29T02:55:32
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.11s           2025-08-29T02:55:24
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.19s           2025-08-29T02:55:23
+================================================================================
+[2025-08-29T02:56:06.216+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.17s           2025-08-29T02:56:05
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.39s           2025-08-29T02:55:56
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.37s           2025-08-29T02:55:55
+================================================================================
+[2025-08-29T02:56:36.256+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py            746  0.07s             1           0  2.17s           2025-08-29T02:56:05
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.72s           2025-08-29T02:56:28
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.63s           2025-08-29T02:56:27
+================================================================================
+[2025-08-29T02:57:07.072+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.26s           2025-08-29T02:56:38
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.59s           2025-08-29T02:57:00
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.52s           2025-08-29T02:56:58
+================================================================================
+[2025-08-29T02:57:37.266+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.88s           2025-08-29T02:57:10
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.01s           2025-08-29T02:57:31
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.07s           2025-08-29T02:57:30
+================================================================================
+[2025-08-29T02:58:07.589+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.53s           2025-08-29T02:57:42
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.00s           2025-08-29T02:58:02
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.12s           2025-08-29T02:58:01
+================================================================================
+[2025-08-29T02:58:38.036+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.57s           2025-08-29T02:58:15
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.09s           2025-08-29T02:58:34
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.09s           2025-08-29T02:58:32
+================================================================================
+[2025-08-29T02:59:08.335+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.72s           2025-08-29T02:58:47
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.01s           2025-08-29T02:59:05
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.08s           2025-08-29T02:59:04
+================================================================================
+[2025-08-29T02:59:31.225+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-08-29T02:59:31.277+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-08-29T02:59:38.424+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.71s           2025-08-29T02:59:20
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.06s           2025-08-29T02:59:36
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.03s           2025-08-29T02:59:35
+================================================================================
+[2025-08-29T03:00:08.789+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.82s           2025-08-29T02:59:52
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.28s           2025-08-29T03:00:07
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.16s           2025-08-29T03:00:07
+================================================================================
+[2025-08-29T03:00:39.367+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.67s           2025-08-29T03:00:24
+/opt/airflow/dags/predict_via_api_dag.py       1054  1.01s             1           0  1.28s           2025-08-29T03:00:07
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.10s           2025-08-29T03:00:38
+================================================================================
+[2025-08-29T03:01:09.655+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.61s           2025-08-29T03:00:57
+/opt/airflow/dags/predict_via_api_dag.py       1093  0.00s             1           0  1.02s           2025-08-29T03:00:39
+/opt/airflow/dags/simulate_inference_dags.py   1082  1.03s             1           0  1.10s           2025-08-29T03:00:38
+================================================================================
+[2025-08-29T03:01:39.664+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.71s           2025-08-29T03:01:29
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.23s           2025-08-29T03:01:10
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.09s           2025-08-29T03:01:09
+================================================================================
+[2025-08-29T03:02:10.169+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.69s           2025-08-29T03:02:02
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.04s           2025-08-29T03:01:42
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.14s           2025-08-29T03:01:41
+================================================================================
+[2025-08-29T03:02:40.400+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.62s           2025-08-29T03:02:34
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.01s           2025-08-29T03:02:13
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.07s           2025-08-29T03:02:12
+================================================================================
+[2025-08-29T03:03:10.693+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.58s           2025-08-29T03:03:06
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.03s           2025-08-29T03:02:44
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.21s           2025-08-29T03:02:44
+================================================================================
+[2025-08-29T03:03:41.125+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.70s           2025-08-29T03:03:39
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.10s           2025-08-29T03:03:16
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.12s           2025-08-29T03:03:15
+================================================================================
+[2025-08-29T03:04:11.493+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.61s           2025-08-29T03:04:11
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.13s           2025-08-29T03:03:47
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.13s           2025-08-29T03:03:46
+================================================================================
+[2025-08-29T03:04:32.099+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-08-29T03:04:32.164+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-08-29T03:04:42.285+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py           1342  0.00s             1           0  1.61s           2025-08-29T03:04:11
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.04s           2025-08-29T03:04:19
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.22s           2025-08-29T03:04:18
+================================================================================
+[2025-08-29T03:05:12.625+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.70s           2025-08-29T03:04:43
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.06s           2025-08-29T03:04:50
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.10s           2025-08-29T03:04:49
+================================================================================
+[2025-08-29T03:05:42.885+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.67s           2025-08-29T03:05:15
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  0.99s           2025-08-29T03:05:21
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.05s           2025-08-29T03:05:20
+================================================================================
+[2025-08-29T03:06:13.512+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.99s           2025-08-29T03:05:48
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  0.99s           2025-08-29T03:05:52
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.14s           2025-08-29T03:05:52
+================================================================================
+[2025-08-29T03:06:43.777+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.96s           2025-08-29T03:06:21
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.38s           2025-08-29T03:06:24
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.35s           2025-08-29T03:06:23
+================================================================================
+[2025-08-29T03:07:16.176+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.22s           2025-08-29T03:06:53
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.41s           2025-08-29T03:06:57
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.46s           2025-08-29T03:06:56
+================================================================================
+[2025-08-29T03:07:47.227+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.48s           2025-08-29T03:07:26
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.47s           2025-08-29T03:07:28
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.61s           2025-08-29T03:07:27
+================================================================================
+[2025-08-29T03:08:17.619+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.13s           2025-08-29T03:07:59
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.01s           2025-08-29T03:08:00
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.27s           2025-08-29T03:07:59
+================================================================================
+[2025-08-29T03:08:48.194+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.03s           2025-08-29T03:08:31
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.26s           2025-08-29T03:08:32
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.29s           2025-08-29T03:08:31
+================================================================================
+[2025-08-29T03:09:18.350+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.89s           2025-08-29T03:09:04
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.38s           2025-08-29T03:09:03
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.13s           2025-08-29T03:09:02
+================================================================================
+[2025-08-29T03:09:32.457+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-08-29T03:09:32.517+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-08-29T03:09:48.591+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.90s           2025-08-29T03:09:36
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.32s           2025-08-29T03:09:35
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.09s           2025-08-29T03:09:33
+================================================================================
+[2025-08-29T03:10:18.671+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.82s           2025-08-29T03:10:08
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.26s           2025-08-29T03:10:08
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.13s           2025-08-29T03:10:04
+================================================================================
+[2025-08-29T03:10:49.028+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.64s           2025-08-29T03:10:40
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.15s           2025-08-29T03:10:39
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.20s           2025-08-29T03:10:36
+================================================================================
+[2025-08-29T03:11:19.467+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.62s           2025-08-29T03:11:13
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.10s           2025-08-29T03:11:10
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.19s           2025-08-29T03:11:07
+================================================================================
+[2025-08-29T03:11:49.985+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.71s           2025-08-29T03:11:45
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.12s           2025-08-29T03:11:42
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.08s           2025-08-29T03:11:39
+================================================================================
+[2025-08-29T03:12:20.358+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.78s           2025-08-29T03:12:18
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.05s           2025-08-29T03:12:13
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.05s           2025-08-29T03:12:10
+================================================================================
+[2025-08-29T03:12:50.934+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py           1975  2.05s             1           0  1.78s           2025-08-29T03:12:18
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.11s           2025-08-29T03:12:44
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.23s           2025-08-29T03:12:42
+================================================================================
+[2025-08-29T03:13:21.338+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py           2014  0.00s             1           0  2.41s           2025-08-29T03:12:51
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.11s           2025-08-29T03:13:16
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.06s           2025-08-29T03:13:13
+================================================================================
+[2025-08-29T03:13:51.811+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.77s           2025-08-29T03:13:23
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.41s           2025-08-29T03:13:48
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.11s           2025-08-29T03:13:40
+================================================================================
+[2025-08-29T03:14:21.962+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.55s           2025-08-29T03:13:54
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  0.97s           2025-08-29T03:14:19
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.11s           2025-08-29T03:14:12
+================================================================================
+[2025-08-29T03:14:32.685+0000] {manager.py:738} INFO - Searching for files in /opt/airflow/dags
+[2025-08-29T03:14:32.763+0000] {manager.py:741} INFO - There are 3 files in /opt/airflow/dags
+[2025-08-29T03:14:52.336+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.64s           2025-08-29T03:14:26
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  0.99s           2025-08-29T03:14:51
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.05s           2025-08-29T03:14:43
+================================================================================
+[2025-08-29T03:15:22.633+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.66s           2025-08-29T03:14:59
+/opt/airflow/dags/predict_via_api_dag.py       2181  1.02s             1           0  0.99s           2025-08-29T03:14:51
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.12s           2025-08-29T03:15:14
+================================================================================
+[2025-08-29T03:15:52.908+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                       PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  2.20s           2025-08-29T03:15:32
+/opt/airflow/dags/predict_via_api_dag.py       2220  0.00s             1           0  1.23s           2025-08-29T03:15:22
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.69s           2025-08-29T03:15:46
+================================================================================
+[2025-08-29T03:16:23.009+0000] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                     PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+--------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ml_training_dag.py                                   1           0  1.83s           2025-08-29T03:16:04
+/opt/airflow/dags/predict_via_api_dag.py                               1           0  1.04s           2025-08-29T03:15:53
+/opt/airflow/dags/simulate_inference_dags.py                           1           0  1.06s           2025-08-29T03:16:18
+================================================================================
