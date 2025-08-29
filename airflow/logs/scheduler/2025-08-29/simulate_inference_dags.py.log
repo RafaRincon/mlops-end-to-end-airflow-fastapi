@@ -654,3 +654,52 @@
 [2025-08-29T04:08:23.375+0000] {processor.py:840} INFO - DAG(s) 'simulate_inference_to_mlflow' retrieved from /opt/airflow/dags/simulate_inference_dags.py
 [2025-08-29T04:08:23.411+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:08:23.410+0000] {dag.py:3036} INFO - Sync 1 DAGs
 [2025-08-29T04:08:23.470+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/simulate_inference_dags.py took 1.422 seconds
+[2025-08-29T04:08:53.722+0000] {processor.py:161} INFO - Started process (PID=359) to work on /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:08:53.726+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/simulate_inference_dags.py for tasks to queue
+[2025-08-29T04:08:53.730+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:08:53.729+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:08:55.193+0000] {processor.py:840} INFO - DAG(s) 'simulate_inference_to_mlflow' retrieved from /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:08:55.238+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:08:55.237+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-08-29T04:08:55.271+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:08:55.271+0000] {dag.py:3823} INFO - Setting next_dagrun for simulate_inference_to_mlflow to 2025-08-29 04:05:00+00:00, run_after=2025-08-29 04:10:00+00:00
+[2025-08-29T04:08:55.304+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/simulate_inference_dags.py took 1.594 seconds
+[2025-08-29T04:09:25.805+0000] {processor.py:161} INFO - Started process (PID=398) to work on /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:09:25.808+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/simulate_inference_dags.py for tasks to queue
+[2025-08-29T04:09:25.810+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:09:25.810+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:09:27.070+0000] {processor.py:840} INFO - DAG(s) 'simulate_inference_to_mlflow' retrieved from /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:09:27.107+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:09:27.106+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-08-29T04:09:27.149+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:09:27.148+0000] {dag.py:3823} INFO - Setting next_dagrun for simulate_inference_to_mlflow to 2025-08-29 04:05:00+00:00, run_after=2025-08-29 04:10:00+00:00
+[2025-08-29T04:09:27.183+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/simulate_inference_dags.py took 1.382 seconds
+[2025-08-29T04:09:57.525+0000] {processor.py:161} INFO - Started process (PID=437) to work on /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:09:57.527+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/simulate_inference_dags.py for tasks to queue
+[2025-08-29T04:09:57.529+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:09:57.529+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:09:58.877+0000] {processor.py:840} INFO - DAG(s) 'simulate_inference_to_mlflow' retrieved from /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:09:58.933+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:09:58.932+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-08-29T04:09:58.981+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:09:58.980+0000] {dag.py:3823} INFO - Setting next_dagrun for simulate_inference_to_mlflow to 2025-08-29 04:05:00+00:00, run_after=2025-08-29 04:10:00+00:00
+[2025-08-29T04:09:59.028+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/simulate_inference_dags.py took 1.507 seconds
+[2025-08-29T04:10:29.174+0000] {processor.py:161} INFO - Started process (PID=476) to work on /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:10:29.176+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/simulate_inference_dags.py for tasks to queue
+[2025-08-29T04:10:29.178+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:10:29.178+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:10:30.481+0000] {processor.py:840} INFO - DAG(s) 'simulate_inference_to_mlflow' retrieved from /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:10:30.526+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:10:30.525+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-08-29T04:10:30.574+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:10:30.574+0000] {dag.py:3823} INFO - Setting next_dagrun for simulate_inference_to_mlflow to 2025-08-29 04:05:00+00:00, run_after=2025-08-29 04:10:00+00:00
+[2025-08-29T04:10:30.610+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/simulate_inference_dags.py took 1.440 seconds
+[2025-08-29T04:11:00.985+0000] {processor.py:161} INFO - Started process (PID=515) to work on /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:11:00.991+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/simulate_inference_dags.py for tasks to queue
+[2025-08-29T04:11:00.993+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:11:00.993+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:11:03.115+0000] {processor.py:840} INFO - DAG(s) 'simulate_inference_to_mlflow' retrieved from /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:11:03.232+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:11:03.222+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-08-29T04:11:03.341+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:11:03.340+0000] {dag.py:3823} INFO - Setting next_dagrun for simulate_inference_to_mlflow to 2025-08-29 04:05:00+00:00, run_after=2025-08-29 04:10:00+00:00
+[2025-08-29T04:11:03.448+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/simulate_inference_dags.py took 2.467 seconds
+[2025-08-29T04:11:33.701+0000] {processor.py:161} INFO - Started process (PID=554) to work on /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:11:33.704+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/simulate_inference_dags.py for tasks to queue
+[2025-08-29T04:11:33.706+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:11:33.706+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:11:35.090+0000] {processor.py:840} INFO - DAG(s) 'simulate_inference_to_mlflow' retrieved from /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:11:35.137+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:11:35.136+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-08-29T04:11:35.177+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:11:35.176+0000] {dag.py:3823} INFO - Setting next_dagrun for simulate_inference_to_mlflow to 2025-08-29 04:05:00+00:00, run_after=2025-08-29 04:10:00+00:00
+[2025-08-29T04:11:35.210+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/simulate_inference_dags.py took 1.514 seconds
+[2025-08-29T04:12:05.708+0000] {processor.py:161} INFO - Started process (PID=593) to work on /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:12:05.719+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/simulate_inference_dags.py for tasks to queue
+[2025-08-29T04:12:05.724+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:12:05.723+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:12:10.108+0000] {processor.py:840} INFO - DAG(s) 'simulate_inference_to_mlflow' retrieved from /opt/airflow/dags/simulate_inference_dags.py
+[2025-08-29T04:12:10.242+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:12:10.240+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2025-08-29T04:12:10.357+0000] {logging_mixin.py:188} INFO - [2025-08-29T04:12:10.356+0000] {dag.py:3823} INFO - Setting next_dagrun for simulate_inference_to_mlflow to 2025-08-29 04:05:00+00:00, run_after=2025-08-29 04:10:00+00:00
+[2025-08-29T04:12:10.445+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/simulate_inference_dags.py took 4.749 seconds
